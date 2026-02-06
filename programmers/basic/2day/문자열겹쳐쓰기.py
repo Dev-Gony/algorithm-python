@@ -1,0 +1,6 @@
+def solution(my_string, overwrite_string, s):
+    answer = ''
+    answer = my_string[0:s] + overwrite_string + my_string[s+len(overwrite_string)::]
+    return answer
+
+## 뭐지 왜 어렵지

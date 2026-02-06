@@ -1,0 +1,6 @@
+a, b = map(int, input().strip().split(' '))
+print("a =", a)
+print("b =", b)
+
+
+# 띠용? 인풋값 받는거 없었으면 헤맸을듯
