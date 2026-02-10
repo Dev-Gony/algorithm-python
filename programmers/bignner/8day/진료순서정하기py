@@ -1,0 +1,11 @@
+def solution(emergency):
+    answer = []
+    result = []
+    result = sorted(emergency, reverse = True)
+    for i in range(0, len(emergency)):
+        rank = result.index(emergency[i]) + 1
+        answer.append(rank)
+    return answer
+
+
+    #어려워......... 인덱스 너무 헷갈려
