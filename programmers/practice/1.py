@@ -72,12 +72,41 @@ def solution(numbers):
 # ---
 
 # 문제 설명:정수 n이 매개변수로 주어질 때 n의 각 자릿수의 합을 return하도록 solution 함수를 완성해주세요.입출력 예: 1234 -> $1 + 2 + 3 + 4 = 10$
-# ---
+def solution(n):
+    answer = 0
+    n = str(n)
+    for i in n:
+        answer += int(i)
+    return answer
+        
 
 # ---
 
+# 문제 설명: 문자열 my_string과 정수 n이 매개변수로 주어질 때, my_string에 들어있는 각 문자를 n번씩 반복한 문자열을 return하도록 solution 함수를 완성해주세요.
+
+# 입출력 예: "hello", 3 -> "hhheeellllllooo"
+
+def solution(my_string, n):
+    answer = 0
+    for i in my_string:
+        answer += my_string[i] * n
+    return answer
 # ---
 
+def solution(emergency):
+    # 1. 내림차순 정렬된 리스트를 하나 만드세요.
+    reverse_list = reversed(emergency, reverse=True)
+    
+    # 2. 정답을 담을 빈 리스트를 준비하세요.
+    answer = []
+    
+    # 3. for문을 돌며 원래 숫자가 '정렬된 리스트'에서 몇 번째(index)인지 찾으세요.
+    for i in range(0, emergency):
+        answer.append(index.emergency[reverse_list[i]] + 1)
+    
+    return answer
+# ---
+#일단심어!!!!!!!!!
 # ---
 
 # ---
